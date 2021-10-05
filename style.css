@@ -1,0 +1,35 @@
+img {
+    top: 0;
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    object-fit: contain;
+    transition: all 5s ease-out;
+
+    /* comment out */
+    animation: testLeft 2s ease-out infinite;
+
+    /* comment out */
+    /*animation: testTransform 2s ease-out infinite;*/
+}
+
+@keyframes testLeft {
+    0%,
+    100% {
+        left: 0;
+    }
+    50% {
+        left: 100px;
+    }
+}
+
+@keyframes testTransform {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(100px, 0, 0);
+    }
+}
